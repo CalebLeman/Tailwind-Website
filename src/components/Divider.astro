@@ -1,0 +1,31 @@
+---
+import { DIVIDER } from "../config";
+const { TEXT, LINKS, IMAGES } = DIVIDER;
+---
+<div class="bg-zinc-900 font-mono">
+    <!-- This is the Diagonal Divider -->
+    <div class="text-center text-6xl bg-zinc-900 text-zinc-200 -translate-y-1/2 shadow-[0_-30px_25px_0_rgba(0,0,0,0.5)] pt-10">
+        {TEXT.H1}
+    </div>
+
+    <!-- This is the List and Picture -->
+    <div class="grid md:grid-cols-2 grid-cols-1 gap-5 justify-between p-10 divide-x">
+        <div class="text-4xl text-white md:text-left text-center flex flex-col space-y-4 p-4 ">
+            {TEXT.BH1}
+            <ul class="text-2xl md:list-disc list-inside md:indent-14">
+                <li class="transition ease-in-out hover:text-slate-400">{TEXT.CH1}</li>
+                <li class="transition ease-in-out hover:text-slate-400">{TEXT.CH2}</li>
+                <li class="transition ease-in-out hover:text-slate-400">{TEXT.CH3}</li>
+                <li class="transition ease-in-out hover:text-slate-400">{TEXT.CH4}</li>
+            </ul>
+
+
+            
+        </div>
+        <img
+            src = {IMAGES.P1.src}
+            alt = {IMAGES.P1.alt}
+            class="drop-shadow-xl"
+         />
+    </div>
+</div>

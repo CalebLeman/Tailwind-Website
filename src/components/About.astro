@@ -1,0 +1,52 @@
+---
+import { ABOUT } from "../config";
+const { TEXT, LINKS, IMAGES } = ABOUT;
+
+---
+<div class="bg-zinc-900 font-mono">
+
+    <div class="p-10 text-center flex-initial">
+        <div class="text-white text-4xl">About Us </div>
+
+        <!-- These Are the cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 justify-between p-10 text-center flex-initial">
+            <div class="text-black bg-zinc-200 rounded-md drop-shadow transition ease-in-out duration-200 hover:scale-105">
+                <img 
+                src={IMAGES.P1.src},
+                alt={IMAGES.P1.alt}
+                class="object-contain rounded-md drop-shadow"
+                />
+                <div class="text-3xl">{TEXT.P1}</div>
+                <div class="pt-3 text-xl p-3 text-zinc-900">{TEXT.P1C}</div>
+            </div>
+    
+            <div class="text-black bg-zinc-200 rounded-md drop-shadow transition ease-in-out duration-200 hover:scale-105">
+                <img 
+                src={IMAGES.P2.src},
+                alt={IMAGES.P2.alt}
+                class="object-contain rounded-md drop-shadow"
+                />
+                <div class="text-3xl">{TEXT.P2}</div>
+                <div class="pt-3 text-xl p-3 text-zinc-900">{TEXT.P2C}</div>
+            </div>
+    
+            <div class="text-black bg-zinc-200 rounded-md drop-shadow transition ease-in-out duration-200 hover:scale-105">
+                <img 
+                src={IMAGES.P3.src},
+                alt={IMAGES.P3.alt}
+                class="object-contain rounded-md drop-shadow"
+                />
+                <div class="text-3xl">{TEXT.P3}</div>
+                <div class="pt-3 text-xl p-3 text-zinc-900">{TEXT.P3C}</div>
+            </div>
+        </div>
+        <div class="text-white text-4xl">{TEXT.H1}</div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10 justify-between p-10 text-center flex-initial">
+            <a href={LINKS.L1.href} class="text-white text-2xl">{LINKS.L1.content}</a>
+            <a href={LINKS.L2.href} class="text-white text-2xl">{LINKS.L2.content}</a>
+            <a href={LINKS.L3.href} class="text-white text-2xl">{LINKS.L3.content}</a>
+            <a href={LINKS.L4.href}class="text-white text-2xl">{LINKS.L4.content}</a>
+        </div>
+        
+    </div>
+</div>

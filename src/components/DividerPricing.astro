@@ -1,0 +1,47 @@
+---
+import { DIVIDERPRICE } from "../config";
+const { TEXT, LINKS, IMAGES } = DIVIDERPRICE;
+
+---
+<div class="bg-zinc-900 font-mono">
+    <!-- This is the Diagonal Divider -->
+    <div class="text-center text-6xl bg-zinc-900 text-zinc-200 -translate-y-1/2 shadow-[0_-30px_25px_0_rgba(0,0,0,0.5)] pt-10">
+        {TEXT.H1}
+    </div>
+
+    
+
+    <!-- These Are the cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 justify-between p-10 text-center flex-initial">
+        <div class="text-black bg-zinc-200 rounded-md drop-shadow transition ease-in-out duration-200 hover:scale-105">
+            <img 
+            src={IMAGES.P2.src},
+            alt={IMAGES.P2.alt}
+            class="object-contain rounded-md drop-shadow"
+            />
+            <a href={LINKS.B1.href}class="text-3xl">{LINKS.B1.content}</a>
+            <div class="pt-3 text-xl p-3 text-zinc-900">{TEXT.B1P}</div>
+        </div>
+
+        <div class="text-black bg-zinc-200 rounded-md drop-shadow transition ease-in-out duration-200 hover:scale-105">
+            <img 
+            src={IMAGES.P3.src},
+            alt={IMAGES.P3.alt}
+            class="object-contain rounded-md drop-shadow"
+            />
+            <a href={LINKS.B2.href}class="text-3xl">{LINKS.B2.content}</a>
+            <div class="pt-3 text-xl p-3 text-zinc-900">{TEXT.B2P}</div>
+        </div>
+
+        <div class="text-black bg-zinc-200 rounded-md drop-shadow transition ease-in-out duration-200 hover:scale-105">
+            <img 
+            src={IMAGES.P4.src},
+            alt={IMAGES.P4.alt}
+            class="object-contain rounded-md drop-shadow"
+            />
+            <a href={LINKS.B3.href}class="text-3xl">{LINKS.B3.content}</a>
+            <div class="pt-3 text-xl p-3 text-zinc-900">{TEXT.B2P}</div>
+        </div>
+        
+    </div>
+</div>

@@ -1,0 +1,33 @@
+---
+import { ITEMTHREE } from "../config";
+const { TEXT, LINKS, IMAGES } = ITEMTHREE;
+
+---
+<div class="bg-zinc-900 font-mono">
+    <!-- This is the Diagonal Divider -->
+
+
+    
+
+    <!-- These Are the cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 justify-between p-10 text-center flex-initial">
+        <div class="text-black bg-zinc-200 rounded-md drop-shadow">
+            <img 
+            src={IMAGES.P1.src},
+            alt={IMAGES.P1.alt}
+            class="object-contain rounded-md drop-shadow"
+            />
+            <div class="pt-5 text-3xl">{TEXT.B1H}</div>
+            <div class="pt-3 text-xl p-3 text-zinc-900">{TEXT.B1P}</div>
+        </div>
+
+        <div class="text-black bg-zinc-200 rounded-md drop-shadow">
+            
+            <div class="pt-5 text-3xl">{TEXT.B2H}</div>
+            <div class="pt-3 text-xl p-3 text-zinc-900">{TEXT.B2P}</div>
+        </div>
+
+
+        
+    </div>
+</div>

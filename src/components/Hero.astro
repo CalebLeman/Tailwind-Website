@@ -1,0 +1,25 @@
+---
+import { HERO } from "../config";
+const { TEXT, LINKS, IMAGES } = HERO;
+---
+
+<div class="relative content-center shrink font-mono">
+    <!-- Background Image -->
+    <img
+        src={IMAGES.MAIN.src}
+        alt={IMAGES.MAIN.alt}
+        
+        class=""
+    />
+    <!-- Title -->
+    <div class="absolute text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shrink p-10">
+        <h1 class="md:text-8xl text-4xl drop-shadow-lg border-solid rounded-2xl border-2 md:p-8 p-4 text-center backdrop-blur">
+            <div>
+                {TEXT.H1}
+            </div>
+            <div class="font-medium">
+                {TEXT.H2}
+            </div>
+        </h1>
+    </div>
+</div>

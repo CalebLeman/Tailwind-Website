@@ -1,0 +1,26 @@
+---
+import { NAVBAR } from "../config";
+const { TEXT, LINKS } = NAVBAR;
+---
+
+
+<nav class=" sticky top-0 z-10 backdrop-blur-2xl backdrop-brightness-75 font-mono">
+    <div class="text-center p-3 space-x-4 ">
+        <a href={LINKS.B1.href} class="transition ease-in-out duration-200 text-slate-50 hover:text-slate-400">
+            {LINKS.B1.content}
+        </a>
+        <a href={LINKS.B2.href} class="transition ease-in-out duration-200 text-slate-50 hover:text-slate-400">
+            {LINKS.B2.content}
+        </a>
+        <a href={LINKS.B3.href} class="transition ease-in-out duration-200 text-slate-50 hover:text-slate-400">
+            {LINKS.B3.content}
+        </a>
+        <a href={LINKS.B4.href} class="transition ease-in-out duration-200 text-slate-50 hover:text-slate-400">
+            {LINKS.B4.content}
+        </a>
+    </div>
+    
+
+
+      
+</nav>
